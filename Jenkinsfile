@@ -5,11 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                make
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+                ./test 10 0
             }
         }
         stage('Deploy') {
