@@ -38,5 +38,5 @@ int main(int argc, char **argv)
 	for (i = tests_failed; i < tests_num; i++)
 		do_test(i, 0);
 
-	return 0;
+	return tests_failed;
 }
